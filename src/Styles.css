@@ -1,0 +1,279 @@
+/***********************************************************************
+ *  Body Container css
+ **********************************************************************/
+body {
+background-color: #ab2656;
+animation-name: example;
+  animation-duration: 40s;
+  font-family: 'Great Vibes', cursive;
+
+}
+.container {
+  
+  font-size: 1em;
+  font-family: 'Great Vibes', cursive;
+  height: 100%;
+  
+}
+
+@keyframes example {
+  0% {
+    background-color: #d83434;
+  }
+  5% {
+    background-color: #2aad2a;
+  }
+  10% {
+    background-color: #582a72;
+  }
+  15% {
+    background-color: #932389;
+  }
+  20% {
+    background-color: #d83434;
+  }
+  25% {
+    background-color: #2aad2a;
+  }
+  30% {
+    background-color: #9acd32;
+  }
+  35% {
+    background-color: #932389;
+  }
+   40% {
+    background-color: #87ceeb;
+  }
+   50% {
+    background-color: #ff6347;
+  }
+   55% {
+    background-color: #fff5ee;
+  }
+
+   60% {
+    background-color: #2aad2a;
+  }
+  65% {
+    background-color: #582a72;
+  }
+  70% {
+    background-color: #932389;
+  }
+  75% {
+    background-color: #d83434;
+  }
+  80% {
+    background-color: #2aad2a;
+  }
+  85% {
+    background-color: #9acd32;
+  }
+  85% {
+    background-color: #932389;
+  }
+   90% {
+    background-color: #87ceeb;
+  }
+   95% {
+    background-color: #ff6347;
+  }
+   100% {
+    background-color: #fff5ee;
+  }
+}
+
+
+/* The element to apply the animation to */
+
+/***********************************************************************
+ *  header 1 css
+ **********************************************************************/
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #ab2656;
+  justify-content: center;
+  align-content: center;
+
+}
+
+h2 {
+    text-align: center;
+    margin-top: 25px;
+    animation-name: love;
+  animation-duration: 60s;
+}
+
+@keyframes love {
+  0% {
+    color: #d83434;
+  }
+  5% {
+    color: #2aad2a;
+  }
+  10% {
+    color: #582a72;
+  }
+  15% {
+    color: #932389;
+  }
+  20% {
+    color: #d83434;
+  }
+  25% {
+    color: #2aad2a;
+  }
+  30% {
+    color: #9acd32;
+  }
+  35% {
+    color: #932389;
+  }
+   40% {
+    color: #87ceeb;
+  }
+   50% {
+    color: #ff6347;
+  }
+   55% {
+    color: #fff5ee;
+  }
+
+   60% {
+    color: #2aad2a;
+  }
+  65% {
+    color: #582a72;
+  }
+  70% {
+    color: #932389;
+  }
+  75% {
+    color: #d83434;
+  }
+  80% {
+    color: #2aad2a;
+  }
+  85% {
+    color: #9acd32;
+  }
+  85% {
+    color: #932389;
+  }
+   90% {
+    color: #87ceeb;
+  }
+   95% {
+    color: #ff6347;
+  }
+   100% {
+    color: #fff5ee;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .header {
+    background-color: white;
+    height: 80px;
+    border-radius: 50px;
+    margin: 20px;
+  }
+}
+/***********************************************************************
+ *  Header 2 links
+ **********************************************************************/
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  font-size: 0.5em;
+  background-color: white;
+  justify-content: center;
+  align-content: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+ .main-nav {
+    display: none;
+    cursor: default;
+  }
+}
+li {
+  padding: 20px;
+}
+
+
+li :hover {
+  /*
+  border-bottom: 1px solid #ab2656; */
+  color: #ab2656;
+  text-decoration: none;
+}
+.flexing {
+  flex: 1;
+}
+
+.flexStop {
+  flex: 1;
+}
+
+@media only screen and (min-width: 1100px) {
+  .flexStop {
+    flex: 0;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/***********************************************************************
+ *  content css
+ **********************************************************************/
+
+.main {
+  /*show heigh: auto
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  */
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 15px;
+  margin: 10px;
+  height: 100%;
+  grid-auto-rows: 100px;
+}
+
+.grid-wrapper > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: width 2s;
+  transition: height 3s;
+}
+.grid-wrapper > div > img:hover {
+  width: 110px;
+  height: 110px;
+}
+
+.grid-wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.expand {
+  margin: 20px;
+}
